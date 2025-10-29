@@ -1,0 +1,10 @@
+body{
+    ground-color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra (desplazamiento-x, desplazamiento-y, desenfoque, color) */
+    border: 2px solid #ccc; /* Borde (grosor, estilo, color) */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+
+}

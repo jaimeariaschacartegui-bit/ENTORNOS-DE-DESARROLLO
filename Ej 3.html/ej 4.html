@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 4</title>
+<style>
+.galeria {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 10px;
+padding: 20px;
+}
+.galeria img {
+width: 100%;
+border-radius: 8px;
+transition: filter 0.3s;
+}
+.galeria img:hover {
+filter: brightness(80%);
+}
+</style>
+</head>
+<body>
+<div class="galeria">
+<img src="https://es.wikipedia.org/wiki/Escudo_de_C%C3%A1diz" alt="Imagen 1">
+<img src="https://via.placeholder.com/300" alt="Imagen 2">
+<img src="https://via.placeholder.com/300" alt="Imagen 3">
+<img src="https://via.placeholder.com/300" alt="Imagen 4">
+</div>
+</body>
+</html>
