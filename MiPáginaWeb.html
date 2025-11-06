@@ -21,7 +21,6 @@ background-color: rgb(0, 0, 0);
 margin-right: 10px;
 margin: auto;
 height: 550px;
-
 float :left
 }
 .caja2{
@@ -31,8 +30,23 @@ background-color: rgb(5, 0, 0);
 margin-right: 10px;
 margin: auto;
 height: 550px;
-
+border-image: round;
+image-rendering: optimizeQuality;
 float :right
+}
+.caja-imagen {
+  width: 300px; /* Ancho de la caja */
+  height: 200px; /* Alto de la caja */
+  border: 1px solid black; /* Borde para visualizar la caja */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Para que la imagen no se salga de la caja */
+}
+
+.caja-imagen img {
+  max-width: 100%; /* Para que la imagen no exceda el ancho de la caja */
+  max-height: 100%; /* Para que la imagen no exceda el alto de la caja */
 }
 </style>
 </head>
@@ -41,7 +55,9 @@ float :right
     <div class="box c1 section h"><h1>BIENVENIDO<BR>A<BR>MI PAGINA WEB
     </h1></div>
     <div class="caja"></div>
-    <div class="caja2"></div>
+    <div class="caja2"><p></p></div>
+    <div class="caja-imagen">
+        <img src="img/imagen.jpg" alt="Descripción de la imagen">
 </div>
 </body>
 </html>
