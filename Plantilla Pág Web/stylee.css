@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+.titulo{
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    text-align:center;
+}
+.menu{
+    height: 25px;
+    width: auto;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    
+}
+.cuerpo{
+    height: 85%;
+    width: auto;
+    background-color: grey;
+    color: rgb(0, 0, 0);
+    text-align:center;
+}
+.imagenes{
+    width: 10%;
+    height: 50%;
+    background-color: blue ;
+}
