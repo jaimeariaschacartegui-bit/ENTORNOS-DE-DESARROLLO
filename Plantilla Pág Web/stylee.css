@@ -1,6 +1,7 @@
 body{
     background-color: grey;
     border-radius: 100px;
+    height: auto;
 }
 .titulo{
     height: 100px;
@@ -51,7 +52,24 @@ body{
 }
 .quejas{
     background-color: aquamarine;
-    width:10% ;
+    width:100% ;
     height:auto ;
-    float: right;
+    text-align: right;
 }
+
+.tablamenu{
+    background-color: azure;
+
+}
+.año2000-20010{
+display: none;
+color: azure;
+cursor: pointer;
+}
+.año2011-2020{
+
+}
+.año2021-2025{
+
+}
+
