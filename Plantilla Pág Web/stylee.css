@@ -93,6 +93,8 @@ body{
     color: white;
     margin-top: 3px;
     border-radius: 5px;
+    align-content: center;
+    text-align: center;
 }
 .subimagen1{
     width: 33.33%;
@@ -148,7 +150,7 @@ body{
   border-radius: 50%; 
   color: #333; 
   font-size: 14px; 
-  height: 450%;
+  height: 145%;
   cursor: pointer; 
   
 }
@@ -199,7 +201,7 @@ body{
   border-radius: 50%; 
   color: #333; 
   font-size: 14px; 
-  height: 25%;
+  height: 35%;
   cursor: pointer; 
   float: left;
 }
@@ -210,4 +212,36 @@ body{
 .tablacontactos{
     width: 10%;
     height: 10%;
+    float: left;
+    
+}
+
+.tablacontactos2{
+    width: 10%;
+    height: 10%;
+    float: right;
+    
+}
+.DIV1{
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    border-radius: 6px;
+
+}
+.arrow-button3{
+  background-color: #afa5a5; 
+  border: 2px solid #333; 
+  border-radius: 50%; 
+  color: #333; 
+  font-size: 14px; 
+  height: 15%;
+  cursor: pointer; 
+  float: left;
+  margin: 1px;
+}
+.arrow-button3:hover {
+  background-color: #ffffff; 
+
 }
