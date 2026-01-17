@@ -1,0 +1,21 @@
+.contenedor {
+display: flex;
+gap: 20px;
+}
+.columna {
+width: 50%;
+background-color: #ddd;
+padding: 20px;
+}
+@media(max-width: 748px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .columna {
+        width: 100%;
+        padding: 20px ;
+    }
+
+
+}
