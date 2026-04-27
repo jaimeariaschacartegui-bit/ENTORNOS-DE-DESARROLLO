@@ -1,97 +1,191 @@
-<html>
-    <head>
-        <title>Plantilla Página Web</title>
-        <meta name="viewport">
-    </head>
-<body href="stylee.css">
-<link rel="stylesheet" href="stylee.css">
-<meta charset="UTF-8">
-<button class="arrow-button"> <a href="1.html" style="color: black; text-decoration: none ;">←</a></button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Sexata</title>
+    <link rel="stylesheet" href="stylee.css">
 
-<div class="buscador" >
-    
-</div>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #222;
+        }
 
-<div class="tablamenu">
-    <table border="11px" style=" border-color: rgb(0, 0, 0); width: 100%; height: 5%; border-radius: 10px; ">
-        <tr>
-            <th style="font-size: 30px; font-family:fantasy; color: white; "> QUE CAMISETA BUSCAS HOY???</th>
-        </tr>
-    </table>
+        header {
+            background-color: #fff;
+            border-bottom: 2px solid #000;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-</div>
-<div class="buscador" >
-   
-    
-    
-</div>
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #fff;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
 
-<div class="año2000-2010">
-     <form action="" method="get" style="float: right;">
-        <input style="text-align: left;" type="text" name="q" placeholder="Ej: Psg... ">
-        
-    </form>
-    
-    <details style="border: 1px solid; width: 150px; background-color: rgb(255, 255, 255); margin-top: 3px; float: left; border-radius: 4px; ">
-    <summary style="background-color: rgb(253, 253, 253); border-radius: 4px;">Años 2000-2025</summary>
-    <ul style="">
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
 
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .arrow-button {
+            margin: 20px;
+            font-size: 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buscador {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .buscador input {
+            width: 300px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 1em;
+        }
+
+        .titulo-menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .titulo-menu h2 {
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+
+        .selector-anios {
+            width: 250px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .galeria img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="arrow-button">
+        <a href="1.html" style="color:black; text-decoration:none;">←</a>
+    </button>
+
+    <header>
+        <h1>JimmyStore</h1>
+        <h4>Encuentra tu camiseta retro</h4>
+    </header>
+
+    <nav>
+        <a href="1.html">Inicio</a>
+        <a href="./3.historia.html">Historia</a>
+        <a href="./4.contactanos.html">Contactos</a>
+        <a href="./reseñas.html">Reseñas</a>
+    </nav>
+
+    <div class="titulo-menu">
+        <h2>¿Qué camiseta buscas hoy?</h2>
+    </div>
+
+    <div class="buscador">
+        <input type="text" placeholder="Ej: PSG 2003, Barcelona 1999, etc.">
+    </div>
+
+    <div class="selector-anios">
         <details>
-        <summary>2000-2010</summary>
-        <ul style="">
-            <li>2000</li>
-            <li>2001</li>
-            <li>2002</li>
-            <li>2003</li>
-            <li>2004</li>
-            <li>2005</li>
-            <li>2006</li>
-            <li>2007</li>
-            <li>2008</li>
-            <li>2009</li>
-            <li>2010</li>
+            <summary>Años 2000 - 2025</summary>
 
-        </ul>
+            <details>
+                <summary>2000 - 2010</summary>
+                <ul>
+                    <li>2000</li><li>2001</li><li>2002</li><li>2003</li><li>2004</li>
+                    <li>2005</li><li>2006</li><li>2007</li><li>2008</li><li>2009</li><li>2010</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>2011 - 2020</summary>
+                <ul>
+                    <li>2011</li><li>2012</li><li>2013</li><li>2014</li><li>2015</li>
+                    <li>2016</li><li>2017</li><li>2018</li><li>2019</li><li>2020</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>2021 - 2025</summary>
+                <ul>
+                    <li>2021</li><li>2022</li><li>2023</li><li>2024</li><li>2025</li>
+                </ul>
+            </details>
+
         </details>
+    </div>
 
-        <details>
-        <summary>2011-2020</summary>
-        <ul style="">
-            <li>2011</li>
-            <li>2012</li>
-            <li>2013</li>
-            <li>2014</li>
-            <li>2015</li>
-            <li>2016</li>
-            <li>2017</li>
-            <li>2018</li>
-            <li>2019</li>
-            <li>2020</li>
+    <div class="galeria">
+        <img src="retro1.jpg" alt="Camiseta Retro 1">
+        <img src="retro2.jpg" alt="Camiseta Retro 2">
+        <img src="retro3.jpg" alt="Camiseta Retro 3">
+    </div>
 
-        </ul>
-        </details>  
-        
-        <details>
-        <summary>2021-2025</summary>
-        <ul style="">
-            <li>2021</li>
-            <li>2022</li>
-            <li>2023</li>
-            <li>2024</li>
-            <li>2025</li>
+    <footer>
+        © 2026 JimmyStore. Todos los derechos reservados.
+    </footer>
 
-        </ul>
-        </details> 
-        
-    </ul>
-    </details>
-</div>
-
-<div class="img" >img</div>
-<br>
-<div class="subimagen1" style="align-content:center; text-align: center;">img </div>
-<div class="subimagen2" style="align-content:center; text-align: center;">img</div>
- 
-</div>
 </body>
+</html>
