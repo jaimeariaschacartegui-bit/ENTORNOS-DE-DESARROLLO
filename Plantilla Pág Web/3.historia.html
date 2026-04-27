@@ -1,25 +1,166 @@
-<html>
-    <head>
-        <title>Plantilla Página Web</title>
-        <meta name="viewport">
-    </head>
-<body href="stylee.css">
-<link rel="stylesheet" href="stylee.css">
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - Sexata</title>
+    <link rel="stylesheet" href="stylee.css">
 
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #222;
+        }
 
+        header {
+            background-color: #fff;
+            border-bottom: 2px solid #000;
+            text-align: center;
+            padding: 20px 0;
+        }
 
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
 
-<div class="tituloHistoria" ><h1>TITULO
-    <button class="arrow-button2"> <a href="1.html" style="color: black; text-decoration: none ;">←</a></button>
-</h1><br>Nombre del creador
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            background-color: #fff;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
 
-        
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
 
-</div>
-<div class="textoHistoria">texto de la historia html
+        nav a:hover {
+            color: #ff6600;
+        }
 
-    <div class="imagendCaraAutor"style="align-content: center;">imagen con la cara del autor</div>
-</div>
-<br>
-<div class="comentarios">comentarios</div>
+        .arrow-button2 {
+            margin: 20px;
+            font-size: 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .tituloHistoria {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .tituloHistoria h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .tituloHistoria span {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .textoHistoria {
+            width: 70%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-size: 1em;
+            line-height: 1.6em;
+        }
+
+        .imagendCaraAutor {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            border-radius: 100%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9em;
+            color: #555;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .comentarios {
+            width: 70%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="arrow-button2">
+        <a href="1.html" style="color:black; text-decoration:none;">←</a>
+    </button>
+
+    <header>
+        <h1>Sexata</h1>
+        <h4>Nuestra Historia</h4>
+    </header>
+
+    <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./2.menu.html">Menú</a>
+        <a href="./4.contactanos.html">Contactos</a>
+        <a href="./reseñas.html">Reseñas</a>
+    </nav>
+
+    <div class="tituloHistoria">
+        <h1>Título de la Historia</h1>
+        <span>Nombre del creador</span>
+    </div>
+
+    <div class="textoHistoria">
+        <p>
+            Aquí puedes escribir la historia de la marca Sexata: cómo nació, qué te inspiró,
+            por qué decidiste crear camisetas retro, cuál es tu visión y hacia dónde quieres llevar la marca.
+            Este espacio está pensado para que cuentes tu recorrido de forma cercana y profesional.
+        </p>
+
+        <div class="imagendCaraAutor">
+            <img src="../img/yo.jpg" alt="jimmy" style="width: 100%; height: 100%; border-radius: 100%;">
+        </div>
+    </div>
+
+    <div class="comentarios">
+        <h3>Comentarios</h3>
+        <p>Aquí puedes añadir opiniones, mensajes o reflexiones relacionadas con la historia de la marca.</p>
+    </div>
+
+    <footer>
+        © 2026 Sexata. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
