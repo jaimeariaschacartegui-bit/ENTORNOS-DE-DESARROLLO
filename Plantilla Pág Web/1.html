@@ -5,81 +5,122 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sexata - Moda Retro</title>
 <link rel="stylesheet" href="stylee.css">
+
 <style>
-body { font-family: 'Poppins',
-sans-serif; margin: 0;
-padding: 0;
-background-color: #f9f9f9;
-color: #222;
+body { 
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #222;
 }   
+
 header {
-background-color: #fff; 
-border-bottom: 2px solid #000; 
-text-align: center; padding: 20px 0; 
+    background-color: #fff; 
+    border-bottom: 2px solid #000; 
+    text-align: center; 
+    padding: 20px 0; 
 } 
+
 header h1 {
-font-size: 2.5em; 
-margin: 0; 
-letter-spacing: 2px; 
+    font-size: 2.5em; 
+    margin: 0; 
+    letter-spacing: 2px; 
 } 
+
 header h4 { 
-font-weight: 400; 
-color: #555; 
+    font-weight: 400; 
+    color: #555; 
 } 
+
 nav { 
-display: flex; 
-justify-content: center; 
-gap: 40px; 
-background-color: #fff; 
-padding: 15px 0; 
-border-bottom: 1px solid #ddd; 
+    display: flex; 
+    justify-content: center; 
+    gap: 40px; 
+    background-color: #fff; 
+    padding: 15px 0; 
+    border-bottom: 1px solid #ddd; 
 }
+
 nav a { 
-color: #000; 
-text-decoration: none; 
-font-weight: 600; 
-transition: color 0.3s; 
+    color: #000; 
+    text-decoration: none; 
+    font-weight: 600; 
+    transition: color 0.3s; 
 } 
+
 nav a:hover { 
-color: #ff6600; 
+    color: #ff6600; 
 } 
+
 main { 
-padding: 40px; 
-text-align: center; 
+    padding: 40px; 
+    text-align: center; 
 }
+
 main h3 { 
-font-size: 1.8em; 
-margin-bottom: 20px; 
+    font-size: 1.8em; 
+    margin-bottom: 20px; 
 }
+
 .galeria {
-display: flex; 
-justify-content: center; 
-flex-wrap: wrap; 
-gap: 30px; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 30px; 
 } 
+
 .galeria img { 
-width: 300px; 
-height: 300px; 
-object-fit: cover; 
-border-radius: 10px; 
-box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
-transition: transform 0.3s;
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: transform 0.3s;
 } 
+
 .galeria img:hover { 
-transform: scale(1.05); 
-} 
+    transform: scale(1.05); 
+}
+
+/* NUEVA GALERÍA EXTRA */
+.galeria-extra {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.galeria-extra img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.galeria-extra img:hover {
+    transform: scale(1.05);
+}
+
 footer { 
-background-color: #fff; 
-text-align: center; 
-padding: 20px;
-border-top: 1px solid #ddd; 
-font-size: 0.9em; 
-color: #555; 
+    background-color: #fff; 
+    text-align: center; 
+    padding: 20px;
+    border-top: 1px solid #ddd; 
+    font-size: 0.9em; 
+    color: #555; 
 }
 </style>
 </head>
+
 <body>
-<header> <h1>Sexata</h1> <h4>Moda Retro - Desde 2026</h4>
+
+<header> 
+    <h1>Sexata</h1> 
+    <h4>Moda Retro - Desde 2026</h4>
 </header>
 
 <nav>
@@ -91,15 +132,28 @@ color: #555;
 
 <main>
     <h3>Nuestras Camisetas Retro</h3>
+
+    <!-- GALERÍA PRINCIPAL -->
     <div class="galeria">
         <img src="../img/imagen1.jpeg" alt="Camiseta Retro 1">
         <img src="../img/imagen2.jpg" alt="Camiseta Retro 2">
-        <img src="../img/imagen3.jpeg" alt="Camiseta Retro 3">
+        <img src="../img/futbol.webp" alt="Camiseta Retro 3">
     </div>
+
+    <!-- NUEVA GALERÍA EXTRA -->
+    <h3 style="margin-top: 60px;">Más modelos retro</h3>
+    <div class="galeria-extra">
+        <img src="../img/futbol2.jpg" alt="Modelo Retro 4">
+        <img src="../img/futbol3.avif" alt="Modelo Retro 5">
+        <img src="../img/futbol4.webp" alt="Modelo Retro 6">
+        <img src="../img/futbol5.webp" alt="Modelo Retro 7">
+    </div>
+
 </main>
 
 <footer>
     © 2026 JimmyStore. Todos los derechos reservados.
 </footer>
 
-</body> </html>
+</body> 
+</html>
