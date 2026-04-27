@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Pruebas</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        header { background: #4CAF50; padding: 15px; color: white; }
+        button { padding: 10px 15px; margin-top: 10px; cursor: pointer; }
+        #mensaje { margin-top: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a la Página de Pruebas</h1>
+</header>
+
+<section>
+    <h2>Formulario de contacto</h2>
+    <form id="form">
+        <label>Nombre:</label><br>
+        <input type="text" id="nombre"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email"><br><br>
+
+        <button type="button" onclick="enviar()">Enviar</button>
+    </form>
+
+    <p id="mensaje"></p>
+</section>
+
+<script>
+    function enviar() {
+        const nombre = document.getElementById("nombre").value;
+        const email = document.getElementById("email").value;
+
+        if (nombre && email) {
+            document.getElementById("mensaje").innerText = "Formulario enviado correctamente";
+        } else {
+            document.getElementById("mensaje").innerText = "Por favor completa todos los campos";
+        }
+    }
+</script>
+
+</body>
+</html>
