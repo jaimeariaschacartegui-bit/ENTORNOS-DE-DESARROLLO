@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Color Dash 3D</title>
+<link rel="stylesheet" href="style.css">
+<script src="three.min.js"></script>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginScreen" class="screen">
+    <h1>Color Dash 3D</h1>
+    <input id="username" placeholder="Usuario">
+    <input id="password" type="password" placeholder="Contraseña">
+    <button onclick="register()">Registrarse</button>
+    <button onclick="login()">Iniciar Sesión</button>
+    <p id="loginMsg"></p>
+</div>
+
+<!-- MENÚ PRINCIPAL -->
+<div id="menuScreen" class="screen hidden">
+    <h1>Bienvenido, <span id="playerName"></span></h1>
+    <button onclick="startGame()">Jugar</button>
+    <button onclick="openStore()">Tienda</button>
+    <button onclick="logout()">Cerrar Sesión</button>
+</div>
+
+<!-- TIENDA -->
+<div id="storeScreen" class="screen hidden">
+    <h1>Tienda</h1>
+    <p>Boosters disponibles: <span id="boosterCount">0</span></p>
+    <button onclick="buyBooster()">Comprar Booster (100 pts)</button>
+    <button onclick="backToMenu()">Volver</button>
+</div>
+
+<!-- JUEGO -->
+<canvas id="gameCanvas" class="hidden"></canvas>
+<div id="hud" class="hidden">
+    <div id="score">Puntos: 0</div>
+    <div id="boosters">Boosters: 0</div>
+</div>
+
+<script src="login.js"></script>
+<script src="store.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
